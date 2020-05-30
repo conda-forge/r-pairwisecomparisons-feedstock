@@ -23,29 +23,33 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-  host:
+  host: 
     - r-base
     - r-broomextra
     - r-dplyr
+    - r-dunn.test
     - r-forcats
-    - r-ipmisc >=2.0.0
-    - r-jmv
+    - r-ipmisc
+    - r-matrix
+    - r-pmcmrplus
     - r-purrr
     - r-rlang
-    - r-tidybf >=0.2.0
-    - r-tidyr >=1.0.0
+    - r-tidybf
+    - r-tidyr
     - r-wrs2
   run:
     - r-base
     - r-broomextra
     - r-dplyr
+    - r-dunn.test
     - r-forcats
-    - r-ipmisc >=2.0.0
-    - r-jmv
+    - r-ipmisc
+    - r-matrix
+    - r-pmcmrplus
     - r-purrr
     - r-rlang
-    - r-tidybf >=0.2.0
-    - r-tidyr >=1.0.0
+    - r-tidybf
+    - r-tidyr
     - r-wrs2
 
 test:
@@ -55,7 +59,7 @@ test:
 
 about:
   home: https://indrajeetpatil.github.io/pairwiseComparisons/, https://github.com/IndrajeetPatil/pairwiseComparisons
-  license: GPL-3-only
+  license: GPL-3.0-only
   summary: "Multiple pairwise comparison tests on tidy data for one-way analysis of variance for both between-subjects and within-subjects designs. Currently, it supports only the most common types of statistical analyses and tests: parametric (Welch's and Student's t-test), nonparametric (Durbin-Conover test and Dwass-Steel-Crichtlow-Fligner\
     \ test), robust (Yuen’s trimmed means test)."
   license_family: GPL3
