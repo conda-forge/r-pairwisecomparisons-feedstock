@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pairwiseComparisons_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pairwiseComparisons/pairwiseComparisons_{{ version }}.tar.gz
-  sha256: 41158c3b18faaaab8e8e2cb5a963a95c8fa1721d53840e96a1dfb6e25b27fdcf
+  sha256: 967d5aaac3116fa55e576ecdabf45e50e070da6c0d529ab887c049dc51791aff
 
 build:
   merge_build_host: true  # [win]
@@ -23,29 +23,33 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-  host:
+  host: 
     - r-base
     - r-broomextra
     - r-dplyr
+    - r-dunn.test
     - r-forcats
-    - r-ipmisc >=2.0.0
-    - r-jmv
+    - r-ipmisc
+    - r-matrix
+    - r-pmcmrplus
     - r-purrr
     - r-rlang
-    - r-tidybf >=0.2.0
-    - r-tidyr >=1.0.0
+    - r-tidybf
+    - r-tidyr
     - r-wrs2
   run:
     - r-base
     - r-broomextra
     - r-dplyr
+    - r-dunn.test
     - r-forcats
-    - r-ipmisc >=2.0.0
-    - r-jmv
+    - r-ipmisc
+    - r-matrix
+    - r-pmcmrplus
     - r-purrr
     - r-rlang
-    - r-tidybf >=0.2.0
-    - r-tidyr >=1.0.0
+    - r-tidybf
+    - r-tidyr
     - r-wrs2
 
 test:
@@ -55,7 +59,7 @@ test:
 
 about:
   home: https://indrajeetpatil.github.io/pairwiseComparisons/, https://github.com/IndrajeetPatil/pairwiseComparisons
-  license: GPL-3-only
+  license: GPL-3.0-only
   summary: "Multiple pairwise comparison tests on tidy data for one-way analysis of variance for both between-subjects and within-subjects designs. Currently, it supports only the most common types of statistical analyses and tests: parametric (Welch's and Student's t-test), nonparametric (Durbin-Conover test and Dwass-Steel-Crichtlow-Fligner\
     \ test), robust (Yuen’s trimmed means test)."
   license_family: GPL3
