@@ -3,7 +3,7 @@ About r-pairwisecomparisons
 
 Home: https://indrajeetpatil.github.io/pairwiseComparisons/, https://github.com/IndrajeetPatil/pairwiseComparisons
 
-Package license: GPL-3-only
+Package license: GPL-3.0-only
 
 Feedstock license: BSD 3-Clause
 
