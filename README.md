@@ -5,11 +5,9 @@ Home: https://indrajeetpatil.github.io/pairwiseComparisons/, https://github.com/
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pairwisecomparisons-feedstock/blob/master/LICENSE.txt)
 
 Summary: Multiple pairwise comparison tests on tidy data for one-way analysis of variance for both between-subjects and within-subjects designs. Currently, it supports only the most common types of statistical analyses and tests: parametric (Welch's and Student's t-test), nonparametric (Durbin-Conover test and Dwass-Steel-Crichtlow-Fligner test), robust (Yuen’s trimmed means test).
-
-
 
 Current build status
 ====================
