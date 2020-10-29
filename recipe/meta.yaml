@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pairwiseComparisons_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pairwiseComparisons/pairwiseComparisons_{{ version }}.tar.gz
-  sha256: 9924bde1cbbd2bcb0295006d0ba880d4796d3ea2d8bd7fa864b761471f62d3d1
+  sha256: 12e2e0b2059fe0ee9e42684bc1ebff2937377abcca6f37e5e3c38c29910b9a36
 
 build:
   merge_build_host: true  # [win]
