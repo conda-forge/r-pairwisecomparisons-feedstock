@@ -23,34 +23,27 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-broomextra
-    - r-dplyr
-    - r-dunn.test
-    - r-forcats
-    - r-ipmisc
-    - r-matrix
     - r-pmcmrplus
+    - r-wrs2 >=1.1_3
+    - r-dplyr
+    - r-insight >=0.14.5
+    - r-parameters >=0.15.0
     - r-purrr
     - r-rlang
-    - r-tidybf
-    - r-tidyr
-    - r-wrs2
+    - r-statsexpressions >=1.2.0
   run:
     - r-base
-    - r-broomextra
-    - r-dplyr
-    - r-dunn.test
-    - r-forcats
-    - r-ipmisc
-    - r-matrix
     - r-pmcmrplus
+    - r-wrs2 >=1.1_3
+    - r-dplyr
+    - r-insight >=0.14.5
+    - r-parameters >=0.15.0
     - r-purrr
     - r-rlang
-    - r-tidybf
-    - r-tidyr
-    - r-wrs2
+    - r-statsexpressions >=1.2.0
 
 test:
   commands:
